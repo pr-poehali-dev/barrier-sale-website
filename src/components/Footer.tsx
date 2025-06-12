@@ -14,12 +14,18 @@ const Footer = () => {
               и тысячи довольных клиентов.
             </p>
             <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <a
+                href="tel:88005508522"
+                className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+              >
                 <Icon name="Phone" size={16} />
-              </div>
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+              </a>
+              <a
+                href="mailto:3160001@mail.ru"
+                className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+              >
                 <Icon name="Mail" size={16} />
-              </div>
+              </a>
               <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                 <Icon name="MapPin" size={16} />
               </div>
@@ -49,9 +55,19 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Контакты</h4>
             <div className="space-y-2 text-gray-300">
-              <div>+7 (495) 123-45-67</div>
-              <div>info@shlagbaum.ru</div>
-              <div>г. Москва, ул. Примерная, д. 123</div>
+              <a
+                href="tel:88005508522"
+                className="text-blue-400 hover:text-blue-300"
+              >
+                8 800 550 8522
+              </a>
+              <a
+                href="mailto:3160001@mail.ru"
+                className="text-blue-400 hover:text-blue-300"
+              >
+                3160001@mail.ru
+              </a>
+              <div>СПб, Ириновский проспект 2, БЦ Ника, оф. 218</div>
             </div>
           </div>
         </div>

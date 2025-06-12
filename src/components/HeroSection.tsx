@@ -28,9 +28,12 @@ const HeroSection = () => {
           <Button
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3"
+            asChild
           >
-            <Icon name="Phone" size={20} />
-            Получить консультацию
+            <a href="tel:88005508522">
+              <Icon name="Phone" size={20} />
+              Получить консультацию
+            </a>
           </Button>
           <Button
             variant="outline"
@@ -53,6 +56,25 @@ const HeroSection = () => {
           <div>
             <div className="text-3xl font-bold text-blue-300">24/7</div>
             <div className="text-sm text-blue-100">техподдержка</div>
+          </div>
+        </div>
+        <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center items-center text-blue-100">
+          <a
+            href="tel:88005508522"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Icon name="Phone" size={16} />8 800 550 8522
+          </a>
+          <a
+            href="mailto:3160001@mail.ru"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Icon name="Mail" size={16} />
+            3160001@mail.ru
+          </a>
+          <div className="flex items-center gap-2">
+            <Icon name="MapPin" size={16} />
+            СПб ириновский проспект 2 БЦ Ника оф. 218
           </div>
         </div>
       </div>

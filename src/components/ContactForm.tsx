@@ -54,7 +54,12 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Телефон</div>
-                  <div className="text-gray-600">+7 (495) 123-45-67</div>
+                  <a
+                    href="tel:88005508522"
+                    className="text-blue-600 hover:text-blue-800"
+                  >
+                    8 800 550 8522
+                  </a>
                 </div>
               </div>
 
@@ -64,7 +69,12 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-gray-600">info@shlagbaum.ru</div>
+                  <a
+                    href="mailto:3160001@mail.ru"
+                    className="text-blue-600 hover:text-blue-800"
+                  >
+                    3160001@mail.ru
+                  </a>
                 </div>
               </div>
 
@@ -75,7 +85,7 @@ const ContactForm = () => {
                 <div>
                   <div className="font-semibold">Адрес</div>
                   <div className="text-gray-600">
-                    г. Москва, ул. Примерная, д. 123
+                    СПб, Ириновский проспект 2, БЦ Ника, оф. 218
                   </div>
                 </div>
               </div>
