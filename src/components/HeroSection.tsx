@@ -3,8 +3,25 @@ import Icon from "@/components/ui/icon";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-20">
-      <div className="container mx-auto px-4 text-center">
+    <section className="relative bg-gradient-to-r from-slate-900 to-blue-900 text-white py-20 overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source
+          src="https://videos.pexels.com/video-files/3130284/3130284-uhd_2560_1440_30fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-slate-900/70 z-10"></div>
+
+      <div className="container mx-auto px-4 text-center relative z-20">
         <h1 className="text-5xl font-bold mb-6 font-montserrat">
           Надежные шлагбаумы для вашего бизнеса
         </h1>
