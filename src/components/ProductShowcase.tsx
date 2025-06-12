@@ -15,7 +15,7 @@ const ProductShowcase = () => {
       title: "Автоматический шлагбаум",
       description: "Высокоскоростная система с дистанционным управлением",
       image:
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop",
+        "https://cdn.poehali.dev/files/06dad277-0be7-4ab2-89c2-9033f54ea14c.png",
       features: [
         "Дистанционное управление",
         "Скорость 3-6 сек",
@@ -28,7 +28,7 @@ const ProductShowcase = () => {
       title: "Ручной шлагбаум",
       description: "Надежное механическое решение для малых объектов",
       image:
-        "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=400&h=300&fit=crop",
+        "https://cdn.poehali.dev/files/06dad277-0be7-4ab2-89c2-9033f54ea14c.png",
       features: ["Простая установка", "Низкие затраты", "Длина стрелы до 4м"],
       price: "от 15 000 ₽",
     },
@@ -37,7 +37,7 @@ const ProductShowcase = () => {
       title: "Промышленный шлагбаум",
       description: "Усиленная конструкция для интенсивного использования",
       image:
-        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop",
+        "https://cdn.poehali.dev/files/06dad277-0be7-4ab2-89c2-9033f54ea14c.png",
       features: [
         "Усиленная конструкция",
         "Работа при -40°C",
