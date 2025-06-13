@@ -74,7 +74,7 @@ const HeroSection = () => {
           </a>
           <div className="flex items-center gap-2">
             <Icon name="MapPin" size={16} />
-            СПб ириновский проспект 2 БЦ Ника оф. 218
+            СПб Ириновский пр. 2 БЦ Ника оф. 218
           </div>
         </div>
       </div>

@@ -58,7 +58,7 @@ const ContactForm = () => {
                     href="tel:88005508522"
                     className="text-blue-600 hover:text-blue-800"
                   >
-                    8 800 550 8522
+                    88005508522
                   </a>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const ContactForm = () => {
                 <div>
                   <div className="font-semibold">Адрес</div>
                   <div className="text-gray-600">
-                    СПб, Ириновский проспект 2, БЦ Ника, оф. 218
+                    СПб Ириновский пр. 2 БЦ Ника оф. 218
                   </div>
                 </div>
               </div>
