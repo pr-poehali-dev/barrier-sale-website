@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 ШлагбаумПро. Все права защищены.</p>
+          <p>© 2025 СигмаПаркигн. Все права защищены.</p>
         </div>
       </div>
     </footer>
