@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4 font-montserrat">
-              ШлагбаумПро
+              Шлагбаум СП
             </h3>
             <p className="text-gray-300 mb-4">
               Надежные системы контроля доступа для вашего бизнеса. 15 лет опыта
