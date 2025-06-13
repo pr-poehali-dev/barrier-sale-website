@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Card,
   CardContent,
@@ -6,7 +7,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import Icon from "@/components/ui/icon";
+import RALColorSelector, { RALColor } from "@/components/RALColorSelector";
+import BarrierGatePreview from "@/components/BarrierGatePreview";
 
 const ProductShowcase = () => {
   const products = [
@@ -46,6 +56,24 @@ const ProductShowcase = () => {
       price: "от 85 000 ₽",
     },
   ];
+
+  const [selectedColor, setSelectedColor] = useState<RALColor | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<number | null>(null);
+
+  const getGateType = (
+    productId: number,
+  ): "automatic" | "manual" | "industrial" => {
+    switch (productId) {
+      case 1:
+        return "automatic";
+      case 2:
+        return "manual";
+      case 3:
+        return "industrial";
+      default:
+        return "automatic";
+    }
+  };
 
   return (
     <section className="py-16 bg-gray-50">
@@ -96,9 +124,39 @@ const ProductShowcase = () => {
                   <span className="text-2xl font-bold text-blue-600">
                     {product.price}
                   </span>
-                  <Button className="bg-blue-600 hover:bg-blue-700">
-                    Подробнее
-                  </Button>
+                  <div className="flex gap-2">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button
+                          variant="outline"
+                          onClick={() => setSelectedProduct(product.id)}
+                        >
+                          <Icon name="Palette" size={16} className="mr-2" />
+                          Цвета
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl">
+                        <DialogHeader>
+                          <DialogTitle>
+                            Выбор цвета - {product.title}
+                          </DialogTitle>
+                        </DialogHeader>
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <RALColorSelector
+                            selectedColor={selectedColor}
+                            onColorSelect={setSelectedColor}
+                          />
+                          <BarrierGatePreview
+                            selectedColor={selectedColor}
+                            gateType={getGateType(product.id)}
+                          />
+                        </div>
+                      </DialogContent>
+                    </Dialog>
+                    <Button className="bg-blue-600 hover:bg-blue-700">
+                      Подробнее
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
