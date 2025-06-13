@@ -59,7 +59,7 @@ const Footer = () => {
                 href="tel:88005508522"
                 className="text-blue-400 hover:text-blue-300"
               >
-                8 800 550 8522
+                8 800 550 85 22{" "}
               </a>
               <a
                 href="mailto:3160001@mail.ru"
